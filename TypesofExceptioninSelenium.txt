@@ -1,0 +1,61 @@
+Types of Exception in Selenium
+-------------------------------------------
+
+1>No Such Element found exception
+
+a>correct the locators
+b>put a wait in the code 
+c>try catch block to handle the exception .
+
+2>ElementNotVisible Exception
+
+a>refresh the webpage
+b>put explicit wait
+c>close the alert if it is coming
+
+3>NoSuchWindowException
+a>Put the correct window id.
+b>try putting implicit wait 
+c>use try catch to handle the exception 
+
+
+4>a>NoSuchFrameException
+a>Use explicit wait 
+b>try correcting the frame id and re execute the script
+
+4>b> No Such Alert Exception
+a>Check whether alert is present or not .
+b>If cases alert comes occasionally , try putting try catch block 
+
+
+
+
+5>TimeOut Exception
+
+a> Try increasing the wait time more than the threshold limit
+b>Add page load timeout
+
+6>StaleElement Exception
+a> Refresh the web page before the stale element exception is occurring
+b>Use try catch block to handle the exception 
+c>Use JavaScriptExecutor to locate the element on the web page
+
+7>Element Not Interactable Exception 
+a>wait until the element is visible or clickable using explicit wait
+b>Use scroll down operation with help of javascript executor interface
+c>Use JSE to interact with the element accordingly
+
+8>WebDriver Exception
+When u try to close the webpage before execution is completed 
+
+Put some wait after execution of test script and then perform close or quit operation 
+
+@After Suite
+@after class
+
+
+
+
+
+
+
